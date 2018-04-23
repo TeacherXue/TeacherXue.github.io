@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/23/修改UISegmentController的竖线颜色/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2018/04/23/修改UISegmentController的竖线颜色/" itemprop="url">修改UISegmentController的竖线颜色</a></h1>
         
 
         <div class="post-meta">
@@ -301,7 +301,7 @@
         
           
             <p>遍历UISegmentController的子view 获取到竖线view  它是一个UIImageView  设置它的tintColor即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//修改UISegmentController的竖线颜色       </span><br><span class="line"></span><br><span class="line">for Segment  in self.segmentView.subviews&#123;           </span><br><span class="line"></span><br><span class="line">let imageView : UIImageView= Segment.subviews[1] as! UIImageView                imageView.tintColor=UIColor.ColorHex(hex:&quot;#c9caca&quot;)       </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//修改UISegmentController的竖线颜色       </span><br><span class="line"></span><br><span class="line">for Segment  in self.segmentView.subviews&#123;           </span><br><span class="line"></span><br><span class="line">let imageView : UIImageView= Segment.subviews[1] as! UIImageView  </span><br><span class="line"></span><br><span class="line">imageView.tintColor=UIColor.ColorHex(hex:&quot;#c9caca&quot;)       </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
