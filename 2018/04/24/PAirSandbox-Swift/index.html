@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>修改UISegmentController的竖线颜色 | 薛老师のiOS小站</title>
+  <title>PAirSandbox-Swift | 薛老师のiOS小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="遍历UISegmentController的子view 获取到竖线view  它是一个UIImageView  设置它的tintColor即可 12345678910//修改UISegmentController的竖线颜色       for Segment  in self.segmentView.subviews&amp;#123;               let imageView : UIIm">
+  <meta name="description" content="仿照MrPeak的PAirSandbox OC版写的Swift版本  可方便实时查看沙盒中的文件并提取传送给mac以及其他app。摆脱iTools之类工具的困扰。 Github ： https://github.com/TeacherXue/PAirSandbox-Swift 喜欢请star">
 <meta property="og:type" content="article">
-<meta property="og:title" content="修改UISegmentController的竖线颜色">
-<meta property="og:url" content="http://yoursite.com/2018/04/23/修改UISegmentController的竖线颜色/index.html">
+<meta property="og:title" content="PAirSandbox-Swift">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/PAirSandbox-Swift/index.html">
 <meta property="og:site_name" content="薛老师のiOS小站">
-<meta property="og:description" content="遍历UISegmentController的子view 获取到竖线view  它是一个UIImageView  设置它的tintColor即可 12345678910//修改UISegmentController的竖线颜色       for Segment  in self.segmentView.subviews&amp;#123;               let imageView : UIIm">
+<meta property="og:description" content="仿照MrPeak的PAirSandbox OC版写的Swift版本  可方便实时查看沙盒中的文件并提取传送给mac以及其他app。摆脱iTools之类工具的困扰。 Github ： https://github.com/TeacherXue/PAirSandbox-Swift 喜欢请star">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-23T09:38:29.000Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/850192-af9dc07adec2e964.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/850192-f07cce8bffdd78aa.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-04-24T05:26:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="修改UISegmentController的竖线颜色">
-<meta name="twitter:description" content="遍历UISegmentController的子view 获取到竖线view  它是一个UIImageView  设置它的tintColor即可 12345678910//修改UISegmentController的竖线颜色       for Segment  in self.segmentView.subviews&amp;#123;               let imageView : UIIm">
+<meta name="twitter:title" content="PAirSandbox-Swift">
+<meta name="twitter:description" content="仿照MrPeak的PAirSandbox OC版写的Swift版本  可方便实时查看沙盒中的文件并提取传送给mac以及其他app。摆脱iTools之类工具的困扰。 Github ： https://github.com/TeacherXue/PAirSandbox-Swift 喜欢请star">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/850192-af9dc07adec2e964.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
   
     <link rel="icon" href="/favicon.png">
@@ -168,28 +171,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-修改UISegmentController的竖线颜色" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="ios实时查看手机沙盒文件-PAirSandbox-Swift" class="article article-type-ios实时查看手机沙盒文件 " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      修改UISegmentController的竖线颜色
+      PAirSandbox-Swift
     </h1>
   
 
         
-        <a href="/2018/04/23/修改UISegmentController的竖线颜色/" class="archive-article-date">
-  	<time datetime="2018-04-23T09:15:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
+        <a href="/2018/04/24/PAirSandbox-Swift/" class="archive-article-date">
+  	<time datetime="2018-04-24T05:25:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>遍历UISegmentController的子view 获取到竖线view  它是一个UIImageView  设置它的tintColor即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//修改UISegmentController的竖线颜色       </span><br><span class="line"></span><br><span class="line">for Segment  in self.segmentView.subviews&#123;           </span><br><span class="line"></span><br><span class="line">    let imageView : UIImageView= Segment.subviews[1] as! UIImageView  </span><br><span class="line"></span><br><span class="line">    imageView.tintColor=UIColor.ColorHex(hex:&quot;#c9caca&quot;)       </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>仿照MrPeak的PAirSandbox OC版写的Swift版本  可方便实时查看沙盒中的文件并提取传送给mac以及其他app。<br>摆脱iTools之类工具的困扰。</p>
+<p>Github ： <a href="https://github.com/TeacherXue/PAirSandbox-Swift" target="_blank" rel="noopener">https://github.com/TeacherXue/PAirSandbox-Swift</a></p>
+<p>喜欢请star</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/850192-af9dc07adec2e964.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="test.jpeg"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/850192-f07cce8bffdd78aa.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="test1.PNG"></p>
 
       
 
@@ -279,7 +285,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/23/修改UISegmentController的竖线颜色/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/24/PAirSandbox-Swift/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -293,15 +299,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/24/PAirSandbox-Swift/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PAirSandbox-Swift
-        
-      </div>
-    </a>
   
+    <a href="/2018/04/23/修改UISegmentController的竖线颜色/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">修改UISegmentController的竖线颜色</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
