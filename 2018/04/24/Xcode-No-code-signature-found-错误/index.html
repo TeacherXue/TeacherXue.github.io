@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>搭建SS教程 | 薛老师のiOS小站</title>
+  <title>Xcode No code signature found 错误 | 薛老师のiOS小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一步、使用root用户登录，运行以下命令（推荐使用putty链接到你的vps主机） 1wget --no-check-certificate https://raw.githubusercontent.com/ianiceice/ssr-serverspeeder-onekey/master/shadowsocksonekey.sh https://raw.githubusercontent.c">
+  <meta name="description" content="前往1/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk 文件夹下修改SDKSettings.plist 文件中的一项CODE_SIGNING_REQUIRED的值，从NO改为YES，再重启XCode即可。 若提示无权限修改 需要用终端获取iPhoneO">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建SS教程">
-<meta property="og:url" content="http://yoursite.com/2018/04/24/搭建SS教程/index.html">
+<meta property="og:title" content="Xcode No code signature found 错误">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/Xcode-No-code-signature-found-错误/index.html">
 <meta property="og:site_name" content="薛老师のiOS小站">
-<meta property="og:description" content="第一步、使用root用户登录，运行以下命令（推荐使用putty链接到你的vps主机） 1wget --no-check-certificate https://raw.githubusercontent.com/ianiceice/ssr-serverspeeder-onekey/master/shadowsocksonekey.sh https://raw.githubusercontent.c">
+<meta property="og:description" content="前往1/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk 文件夹下修改SDKSettings.plist 文件中的一项CODE_SIGNING_REQUIRED的值，从NO改为YES，再重启XCode即可。 若提示无权限修改 需要用终端获取iPhoneO">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-24T05:31:05.000Z">
+<meta property="og:updated_time" content="2018-04-24T05:38:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建SS教程">
-<meta name="twitter:description" content="第一步、使用root用户登录，运行以下命令（推荐使用putty链接到你的vps主机） 1wget --no-check-certificate https://raw.githubusercontent.com/ianiceice/ssr-serverspeeder-onekey/master/shadowsocksonekey.sh https://raw.githubusercontent.c">
+<meta name="twitter:title" content="Xcode No code signature found 错误">
+<meta name="twitter:description" content="前往1/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk 文件夹下修改SDKSettings.plist 文件中的一项CODE_SIGNING_REQUIRED的值，从NO改为YES，再重启XCode即可。 若提示无权限修改 需要用终端获取iPhoneO">
   
   
     <link rel="icon" href="/favicon.png">
@@ -168,35 +168,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-搭建SS教程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Xcode-No-code-signature-found-错误" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      搭建SS教程
+      Xcode No code signature found 错误
     </h1>
   
 
         
-        <a href="/2018/04/24/搭建SS教程/" class="archive-article-date">
-  	<time datetime="2018-04-24T05:30:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
+        <a href="/2018/04/24/Xcode-No-code-signature-found-错误/" class="archive-article-date">
+  	<time datetime="2018-04-24T05:37:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一步、使用root用户登录，运行以下命令（推荐使用putty链接到你的vps主机）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://raw.githubusercontent.com/ianiceice/ssr-serverspeeder-onekey/master/shadowsocksonekey.sh https://raw.githubusercontent.com/ianiceice/ssr-serverspeeder-onekey/master/sysctl</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x shadowsocksonekey.sh</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./shadowsocksonekey.sh</span><br></pre></td></tr></table></figure>
-<p>第二步、根据提示输入信息（比如要你输入你想设定ss的密码、ss的端口，或者是要你选择对应编号的内核，这个更换内核是为了能装上锐速，如果你是vultr的centos6 那么你只有1个选项，选择它就行，其他家的vps自测）</p>
-<p>第三步、等待安装完成，完成后命令台会显示你ss线路的ip、端口、以及密码、加密方式等（端口和密码）</p>
-<p>第四步、重启生效（直接在命令行输入reboot或者在主机商界面输入）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
-<p>到此脚本安装完毕，接下来你可以拿着你的ss愉快的玩耍了，是不是很简单了 呢？友情提示，如果你的服务器在部署时没开ipv6，你可以在服务器设置界面开启（开启ipv6后你连接到服务器后走的是ipv6线路，除了可以访问ipv6网站还可以些许提升你的网速，如果不开速度也可以但是可能跑不满，但注意vultr的服务器是g口，如果你的带宽超过1000m，那么，恩，一般也超不过1g吧- -。）</p>
+        <p>前往<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk</span><br></pre></td></tr></table></figure></p>
+<p>文件夹下修改SDKSettings.plist 文件中的一项CODE_SIGNING_REQUIRED的值，从NO改为YES，再重启XCode即可。</p>
+<p>若提示无权限修改 需要用终端获取iPhoneOS.sdk文件夹的权限 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs</span><br><span class="line"></span><br><span class="line">$sudo chmod -R 777 iPhoneOS.sdk</span><br></pre></td></tr></table></figure>
+<p>重启Xcode 重启Xcode 重启Xcode 重要的事情说三遍</p>
+<p>大功告成。</p>
 
       
 
@@ -286,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/24/搭建SS教程/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/24/Xcode-No-code-signature-found-错误/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,18 +297,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/24/Xcode-No-code-signature-found-错误/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Xcode No code signature found 错误
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/04/24/PAirSandbox-Swift/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PAirSandbox-Swift</div>
+    <a href="/2018/04/24/搭建SS教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">搭建SS教程</div>
       <i class="icon-circle-right"></i>
     </a>
   
